@@ -21,8 +21,7 @@ $(TARGET): $(OBJS)        $(CXX) $(CXXFLAGS) -o $@ $^
 %.o: %.cpp        $(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Clean rule
-clean:
-    rm -f $(OBJS) $(TARGET)
+clean:    rm -f $(OBJS) $(TARGET)
 
 # Phony targets
 .PHONY: all clean
