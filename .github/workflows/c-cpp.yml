@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./projectN/neuralNetwork.cpp
+    - name: Set execute permissions
+      run: chmod +x ./projectN/neuralNetwork.cpp
     - name: make
       run: make
     - name: make check
