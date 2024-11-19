@@ -16,11 +16,11 @@ all: $(TARGET)
 
 # Linking
 $(TARGET): $(OBJS)
-    $(CXX) $(CXXFLAGS) -o $@ $^
+        $(CXX) $(CXXFLAGS) -o $@ $^
 
 # Compilation
 %.o: %.cpp
-    $(CXX) $(CXXFLAGS) -c $< -o $@
+        $(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Clean rule
 clean:
