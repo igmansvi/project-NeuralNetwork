@@ -15,12 +15,10 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(TARGET)
 
 # Linking
-$(TARGET): $(OBJS)
-        $(CXX) $(CXXFLAGS) -o $@ $^
+$(TARGET): $(OBJS)        $(CXX) $(CXXFLAGS) -o $@ $^
 
 # Compilation
-%.o: %.cpp
-        $(CXX) $(CXXFLAGS) -c $< -o $@
+%.o: %.cpp        $(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Clean rule
 clean:
